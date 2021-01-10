@@ -5,7 +5,7 @@ import mapStoreToProps from '../../redux/mapStoreToProps';
 import './LandingPage.css';
 
 // CUSTOM COMPONENTS
-import RegisterForm from '../RegisterForm/RegisterForm';
+import LoginForm from '../LoginForm/LoginForm';
 
 class LandingPage extends Component {
   state = {
@@ -14,6 +14,10 @@ class LandingPage extends Component {
 
   onLogin = (event) => {
     this.props.history.push('/login');
+  };
+
+  toRegistration = (event) => {
+    this.props.history.push('/registration')
   };
 
   render() {
@@ -27,12 +31,12 @@ class LandingPage extends Component {
             
           </div>
           <div className="grid-col grid-col_4">
-            <RegisterForm />
+            <LoginForm />
 
             <center>
-              <h4>Already a Member?</h4>
-              <button className="btn btn_sizeSm" onClick={this.onLogin}>
-                Login
+              <h4>Want to sign up?</h4>
+              <button className="btn btn_sizeSm" onClick={this.toRegistration}>
+                Registration
               </button>
             </center>
           </div>
