@@ -62,7 +62,7 @@ class InfoPage extends Component {
   render() {
     return (
       <div className="container">
-        <h2>Info Page</h2>
+        <h2>Shelf Page</h2>
         <AddItemForm />
         <div className="grid">
           <div >

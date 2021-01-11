@@ -6,6 +6,8 @@ import fetchShelfSaga from './fetchShelf.saga';
 import shelfSaga from './shelf.saga';
 import deleteShelfSaga from './deleteShelf.saga'
 import editShelfSaga from './edit.saga';
+import resetSaga from './resetPassword.saga'
+import setResetPasswordSaga from './setResetPassword.saga'
 
 // rootSaga is the primary saga.
 // It bundles up all of the other sagas so our project can use them.
@@ -23,5 +25,7 @@ export default function* rootSaga() {
     shelfSaga(),
     deleteShelfSaga(),
     editShelfSaga(),
+    resetSaga(),
+    setResetPasswordSaga(),
   ]);
 }

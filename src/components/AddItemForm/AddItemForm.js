@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button";
 import { PickerOverlay } from 'filestack-react';
 
 // dotenv
-const apiKey = process.env.REACT_APP_FILESTACK_API_KEY
+const filestackApiKey = process.env.REACT_APP_FILESTACK_API_KEY
 
 
 
@@ -79,7 +79,7 @@ class AddItemForm extends Component {
             onChange={(event) => this.handleChangeFor(event, `description`)}
             style={{
               marginBottom: "10px",
-              marginTop: "40px",
+              marginTop: "10px",
               backgroundColor: "white",
             }}
           />
@@ -88,7 +88,7 @@ class AddItemForm extends Component {
 
           {this.state.imageUpload ? 
               <PickerOverlay
-                apikey={apiKey}
+                apikey={filestackApiKey}
                 buttonText="Upload Photo"
                 buttonClass="ui medium button gray"
                 options={basicOptions}
