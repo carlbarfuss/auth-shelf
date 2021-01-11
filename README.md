@@ -7,16 +7,14 @@
 
 ## Description
 
-_Duration: 3 days_
+_Duration: Weekend Sprint_
 
-This project showcases using logins to designate authorized routes and access on a page for designated users.  Users can log in, add items to a virtual shelf, and edit/delete their own items.  Users are allowed to view ALL items on the shelf, while limiting access to edit/delete to only the items that they themselves have created.
-
-Passwords are salted/hashed using bcrypt, and filestack is used to handle the image uploads for the images for the items.
+This is a weekend project to teach myself how to recover lost passwords properly.  Over the course of the weekend I learned how to use nodemailer to send a recovery email, create and use a token to identify the user who requested the password recovery, and use that token to allow a user to reset their password securely.
 
 ## Screen Shot
 
-[Info Page]('./SS1.png')
-[Loging Page]('./SS2.png')
+[Info Page](/SS1.png)
+[Loging Page](/SS2.png)
 
 ### Prerequisites
 
@@ -34,12 +32,12 @@ This application will need an API KEY from [filestack](https://www.filestack.com
 2. The queries in the `database.sql` file are set up to create all the necessary tables and populate the needed data to allow the application to run correctly. The project is built on [Postgres](https://www.postgresql.org/download/), so you will need to make sure to have that installed. We recommend using Postico to run those queries as that was used to create the queries, 
 3. Open up your editor of choice and run an `npm install`
 4. create a .env file in the root directory and add the following to it:
-  SERVER_SESSION_SECRET={a random string to encrypt your server session}
-  REACT_APP_FILESTACK_API_KEY={your filestack API key}
-  REACT_APP_EMAIL_USER={account that sends the reset messages from gmail}
-  REACT_APP_EMAIL_PASSWORD={password for gmail account that sends reset messages}
-  CLIENT_URL=http://localhost:3000 (replace this if you end up deploying the app to a non-local host)
-  RESET_PASSWORD_KEY={a random string to encrypt your token}
+  - [ ] SERVER_SESSION_SECRET={a random string to encrypt your server session}
+  - [ ] REACT_APP_FILESTACK_API_KEY={your filestack API key}
+  - [ ] REACT_APP_EMAIL_USER={account that sends the reset messages from gmail}
+  - [ ] REACT_APP_EMAIL_PASSWORD={password for gmail account that sends reset messages}
+  - [ ] CLIENT_URL=http://localhost:3000 (replace this if you end up deploying the app to a non-local host)
+  - [ ] RESET_PASSWORD_KEY={a random string to encrypt your token}
 4. Run `npm run server` in your terminal
 5. Run `npm run client` in your terminal
 6. The `npm run client` command will open up a new browser tab for you!
@@ -57,14 +55,14 @@ This application will need an API KEY from [filestack](https://www.filestack.com
 
 ## Built With
 
-React
-Redux
-Passport
-Bcrypt
-JWT(JsonWebToken)
+- React
+- Redux
+- Passport
+- Bcrypt
+- JWT(JsonWebToken)
 
 
 
 ## Acknowledgement
-Thanks to the entire team ([Jordan Newberry](https://github.com/jordanNewberry21), [Zuber Abdikadir](https://github.com/zuberabdikadir), [Paul Kastenbauer](https://github.com/kastenbauer27), [Brady Baker](https://github.com/bradybaker), [Carl Barfuss](https://github.com/carlbarfuss)) for working together to create this learning tool.   Also a huge thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality.  
+A huge thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality.  
 
