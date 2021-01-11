@@ -42,7 +42,6 @@ class ResetForm extends Component {
       return (
          <form className="formPanel" onSubmit={this.registerUser}>
             <h2>Reset Password</h2>
-            {JSON.stringify(this.state)}
             {this.props.store.errors.registrationMessage && (
                <h3 className="alert" role="alert">
                   {this.props.store.errors.registrationMessage}

@@ -20,6 +20,7 @@ import LandingPage from '../LandingPage/LandingPage';
 import LoginPage from '../LoginPage/LoginPage';
 import RegisterPage from '../RegisterPage/RegisterPage';
 import ResetPage from '../ResetPage/ResetPage';
+import ResetLinkPage from '../resetLinkPage/ResetLinkPage'
 
 import './App.css';
 
@@ -98,13 +99,19 @@ class App extends Component {
               // - if logged in, redirects to "/user"
               // - else shows LandingPage at "/home"
               exact
-              path="/resetpassword"
+              path="/forgotpassword"
               component={ResetPage}
               authRedirect="/user"
             />
-
-            {/* If none of the other routes matched, we will show a 404. */}
-            <Route render={() => <h1>404</h1>} />
+            <Route
+              // with authRedirect:
+              // - if logged in, redirects to "/user"
+              // - else shows LandingPage at "/home"
+              exact
+              path="/resetpassword"
+              component={ResetLinkPage}
+              authRedirect="/user"
+            />
           </Switch>
           <Footer />
         </div>
