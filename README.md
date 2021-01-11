@@ -34,7 +34,7 @@ This application will need an API KEY from [filestack](https://www.filestack.com
 2. The queries in the `database.sql` file are set up to create all the necessary tables and populate the needed data to allow the application to run correctly. The project is built on [Postgres](https://www.postgresql.org/download/), so you will need to make sure to have that installed. We recommend using Postico to run those queries as that was used to create the queries, 
 3. Open up your editor of choice and run an `npm install`
 4. create a .env file in the root directory and add the following to it:
-  - [ ] SERVER_SESSION_SECRET={a random string to encrypt your server session
+  - [ ] SERVER_SESSION_SECRET={a random string to encrypt your server session}
   - [ ] REACT_APP_FILESTACK_API_KEY={your filestack API key}
   - [ ] REACT_APP_EMAIL_USER={account that sends the reset messages from gmail}
   - [ ] REACT_APP_EMAIL_PASSWORD={password for gmail account that sends reset messages}
