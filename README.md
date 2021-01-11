@@ -13,8 +13,7 @@ This is a weekend project to teach myself how to recover lost passwords properly
 
 ## Screen Shot
 
-[Info Page](/SS1.png)
-[Loging Page](/SS2.png)
+![Info Page](/SS1.png)
 
 ### Prerequisites
 
